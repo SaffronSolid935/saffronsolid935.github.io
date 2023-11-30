@@ -27,7 +27,7 @@ This file contains the basic style for all possible elements.
 
 This file determines the dark theme.
 
-### white.css
+### light.css
 
 This file determines the light theme.
 
