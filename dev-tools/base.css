@@ -1,0 +1,13 @@
+:root{
+    --font: Sans-Serif;
+    --font-weight: bold;
+    --font-size: 25px;
+}
+
+html{
+    font-family: var(--font);
+    font-weight: var(--font-weight);
+    font-size: var(--font-size);
+    color: var(--first-foreground-color);
+    background-color: var(--first-background-color);
+}
