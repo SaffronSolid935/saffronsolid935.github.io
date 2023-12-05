@@ -1,0 +1,13 @@
+h1{
+    text-align: center;
+}
+
+#AppBox{
+    margin-left: 50%;
+    margin-top: 50px;
+    transform: translate(-50%,0);
+    background-color: var(--second-background-color);
+    border: 5px solid var(--second-background-color);
+    border-radius: 15px;
+    width: 75%;
+}
