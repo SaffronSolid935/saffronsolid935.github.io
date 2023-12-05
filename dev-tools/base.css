@@ -10,4 +10,5 @@ html{
     font-size: var(--font-size);
     color: var(--first-foreground-color);
     background-color: var(--first-background-color);
+    user-select: none;
 }
