@@ -1,0 +1,68 @@
+h1{
+    text-align: center;
+}
+
+a{
+    color: var(--first-foreground-color);
+    text-decoration: none;
+}
+
+select{
+    background-color: var(--third-background-color);
+    border: solid 5px var(--third-background-color);
+    border-radius: 5px;
+    color: var(--first-foreground-color);
+    user-select: none;
+}
+
+button{
+    background-color: var(--third-background-color);
+    border: solid 5px var(--third-background-color);
+    border-radius: 5px;
+    color: var(--first-foreground-color);
+}
+button:active{
+    
+    background-color: var(--secpnd-background-color);
+    border: solid 5px var(--second-background-color);
+    border-radius: 5px;
+}
+
+/* option{
+    background-color: white;
+}
+option:hover{
+    background-color: black;
+} */
+
+textarea{
+    resize: none;
+    background-color: var(--third-background-color);
+    border: solid 5px var(--third-background-color);
+    border-radius: 5px;
+    color: var(--first-foreground-color);
+    margin-top: 10px;
+    width: calc(100% - 20px);
+}
+
+#AppBox{
+    margin-left: 50%;
+    margin-top: 50px;
+    transform: translate(-50%,0);
+    background-color: var(--second-background-color);
+    border: 5px solid var(--second-background-color);
+    border-radius: 15px;
+    width: 75%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+#outputComment{
+    user-select: none;
+    height: min-content;
+}
+
+#copyToClipboardButton{
+    width: calc(100% - 10px);
+}

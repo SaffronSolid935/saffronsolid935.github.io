@@ -1,0 +1,10 @@
+:root{
+    --first-foreground-color: rgb(255,255,255);
+    --first-background-color: rgb(30,35,40);
+    --second-foreground-color: rgb(204, 203, 203);
+    --second-background-color: rgb(35,40,45);
+    --third-background-color: rgb(40,45,50);
+    
+    --icon-color: invert(0%) sepia(99%) saturate(0%) hue-rotate(312deg) brightness(101%) contrast(101%);
+    /*filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg) brightness(119%) contrast(119%);*/
+}

@@ -1,1 +1,29 @@
-dsa
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saffrons dev tools</title>
+    <link id="themeStyle" rel="stylesheet" href="./light.css">
+    <link id="baseStyle" rel="stylesheet" href="../base.css">
+    <link id="customStyle" rel="stylesheet" href="./style.css">
+    <script src="../base.js"></script>
+</head>
+<body>
+
+    
+    <div id="AppBox">
+        <h1>Pretty Comment</h1>
+        <select id="commentType" name="commentType">
+            <option value="0">########## - Banner</option>
+            <option value="1">/********/ - Banner</option>
+            <option value="2">/*------*/ - Banner</option>
+        </select><br>
+
+        <button id="copyToClipboardButton">Copy to clipboard</button>
+        <textarea id="inputComment" oninput="document.getElementById('outputComment').value = this.value"></textarea>
+        <textarea id="outputComment" readonly></textarea>
+    </div>
+    
+</body>
+</html>
