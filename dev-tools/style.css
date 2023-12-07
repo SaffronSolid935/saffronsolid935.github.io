@@ -2,6 +2,11 @@ h1{
     text-align: center;
 }
 
+a{
+    color: var(--first-foreground-color);
+    text-decoration: none;
+}
+
 #AppBox{
     margin-left: 50%;
     margin-top: 50px;
@@ -30,6 +35,14 @@ h1{
     margin-top: 10px;
     cursor: pointer;
 }
-.App label{
+.App div{
     cursor: pointer; 
+    width: 100%;
+    text-align: center;
+}
+
+.App img{
+    width: 190px;
+    height: auto;
+    filter: var(--icon-color);
 }
