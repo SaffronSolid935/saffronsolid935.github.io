@@ -12,3 +12,14 @@ html{
     background-color: var(--first-background-color);
     user-select: none;
 }
+
+#preview{
+    font-size: small;
+    display: relative;
+}
+
+#preview-child{
+    display: absolute;
+    bottom: 0;
+    left: 0;
+}
