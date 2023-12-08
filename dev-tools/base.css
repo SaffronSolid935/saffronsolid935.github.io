@@ -1,0 +1,25 @@
+:root{
+    --font: Sans-Serif;
+    --font-weight: bold;
+    --font-size: 25px;
+}
+
+html{
+    font-family: var(--font);
+    font-weight: var(--font-weight);
+    font-size: var(--font-size);
+    color: var(--first-foreground-color);
+    background-color: var(--first-background-color);
+    user-select: none;
+}
+
+#preview{
+    font-size: small;
+    display: relative;
+}
+
+#preview-child{
+    display: absolute;
+    bottom: 0;
+    left: 0;
+}

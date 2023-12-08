@@ -1,0 +1,48 @@
+h1{
+    text-align: center;
+}
+
+a{
+    color: var(--first-foreground-color);
+    text-decoration: none;
+}
+
+#AppBox{
+    margin-left: 50%;
+    margin-top: 50px;
+    transform: translate(-50%,0);
+    background-color: var(--second-background-color);
+    border: 5px solid var(--second-background-color);
+    border-radius: 15px;
+    width: 75%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.AppLine{
+    margin-left: 50%;
+    transform: translate(-50%,0);
+}
+
+.App{
+    width: 200px;
+    display: inline-block;
+    aspect-ratio: 1/1;
+    background-color: var(--first-background-color);
+    border: 5px solid var(--first-background-color);
+    border-radius: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.App div{
+    cursor: pointer; 
+    width: 100%;
+    text-align: center;
+}
+
+.App img{
+    width: 190px;
+    height: auto;
+    filter: var(--icon-color);
+}
