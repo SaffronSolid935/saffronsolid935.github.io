@@ -8,20 +8,22 @@
     <link id="baseStyle" rel="stylesheet" href="../base.css">
     <link id="customStyle" rel="stylesheet" href="./style.css">
     <script src="../base.js"></script>
+    <script src="main.js"></script>
 </head>
 <body>
 
     
     <div id="AppBox">
+        <a href=".."><img src="../logo.svg"></img></a>
         <h1>Pretty Comment</h1>
-        <select id="commentType" name="commentType">
+        <select id="commentType" name="commentType" onchange="SetBannerBySelect(this);">
             <option value="0">########## - Banner</option>
             <option value="1">/********/ - Banner</option>
             <option value="2">/*------*/ - Banner</option>
         </select><br>
 
-        <button id="copyToClipboardButton">Copy to clipboard</button>
-        <textarea id="inputComment" oninput="document.getElementById('outputComment').value = this.value"></textarea>
+        <button id="copyToClipboardButton" onclick="Copy()">Copy to clipboard</button>
+        <textarea id="inputComment" oninput="UpdateComment(this);"></textarea>
         <textarea id="outputComment" readonly></textarea>
     </div>
     
