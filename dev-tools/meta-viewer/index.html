@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meta Viewer</title>
+    </head>
+    <body>
+        <div id="body"></div>
+    </body>
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script>
+        async function Load(){
+            var ip = await $.getJSON("https://api.ipify.org?format=json");
+            document.write("<p>User Agent: " + navigator.userAgent + "</p>");
+            document.write("<p>Browser Name: " + navigator.appName + "</p>");
+            document.write("<p>Browser Version: " + navigator.appVersion + "</p>");
+            console.log(ip);
+            document.write("<p> IP: " + ip.ip + "</p>" )
+        }
+
+        Load();
+    </script>
+</html>
