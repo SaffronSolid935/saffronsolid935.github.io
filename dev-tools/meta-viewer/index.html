@@ -6,7 +6,7 @@
         <title>Meta Viewer</title>
     </head>
     <body>
-        <div id="body"></div>
+        This site is using <a>https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js</a>
     </body>
     <script src=
 "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
@@ -19,6 +19,8 @@
             document.write("<p>Browser Version: " + navigator.appVersion + "</p>");
             console.log(ip);
             document.write("<p> IP: " + ip.ip + "</p>" )
+            document.write(`<p>This site is using <a>https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js</a><br>`)
+            document.write(`This site is using <a>https://api.ipify.org?format=json</a></p>`)
         }
 
         Load();
