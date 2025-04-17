@@ -16,6 +16,12 @@ const CommentType = {
         char: '-',
         start: '/*',
         end: "*/"
+    },
+    StarBanner: {
+        id: 3,
+        char: '*',
+        start: '*',
+        end: "*"
     }
 }
 
@@ -46,6 +52,8 @@ function GetBannerConfigByIndex(index){
             return CommentType.SlashAsteriskSlashBanner;
         case 2:
             return CommentType.SlashHypenSlashBanner;
+        case 3:
+            return CommentType.StarBanner;
     }
 }
 
