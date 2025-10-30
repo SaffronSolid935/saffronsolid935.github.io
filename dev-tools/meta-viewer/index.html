@@ -6,6 +6,7 @@
         <title>Meta Viewer</title>
     </head>
     <body>
+        <div id="content"></div>
         This site is using <a>https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js</a>
     </body>
     <script src=
@@ -13,6 +14,7 @@
     </script>
     <script>
         async function Load(){
+            const content = document.getElementById("content");
             var ip = await $.getJSON("https://api.ipify.org?format=json");
             document.write("<p>User Agent: " + navigator.userAgent + "</p>");
             document.write("<p>Browser Name: " + navigator.appName + "</p>");
@@ -21,6 +23,17 @@
             document.write("<p> IP: " + ip.ip + "</p>" )
             document.write(`<p>This site is using <a>https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js</a><br>`)
             document.write(`This site is using <a>https://api.ipify.org?format=json</a></p>`)
+        
+            const params = new URLSearchParams(window.location.search);
+            if ([...params].length > 0) {
+                content.innerHTML += `<h3>URL-Parameter:</h3><ul>`;
+                params.forEach((value, key) => {
+                    content.innerHTML += `<li>${key}: ${value}</li>`;
+                });
+                content.innerHTML += `</ul>`;
+            } else {
+                content.innerHTML += `<p>Keine URL-Parameter vorhanden.</p>`;
+            }
         }
 
         Load();
