@@ -16,13 +16,13 @@
         async function Load(){
             const content = document.getElementById("content");
             var ip = await $.getJSON("https://api.ipify.org?format=json");
-            document.write("<p>User Agent: " + navigator.userAgent + "</p>");
-            document.write("<p>Browser Name: " + navigator.appName + "</p>");
-            document.write("<p>Browser Version: " + navigator.appVersion + "</p>");
+            document.innerHTML += "<p>User Agent: " + navigator.userAgent + "</p>";
+            document.innerHTML += "<p>Browser Name: " + navigator.appName + "</p>";
+            document.innerHTML += "<p>Browser Version: " + navigator.appVersion + "</p>";
             console.log(ip);
-            document.write("<p> IP: " + ip.ip + "</p>" )
-            document.write(`<p>This site is using <a>https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js</a><br>`)
-            document.write(`This site is using <a>https://api.ipify.org?format=json</a></p>`)
+            document.innerHTML += "<p> IP: " + ip.ip + "</p>" ;
+            document.innerHTML += `<p>This site is using <a>https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js</a><br>`;
+            document.innerHTML += `This site is using <a>https://api.ipify.org?format=json</a></p>`;
         
             const params = new URLSearchParams(window.location.search);
             if ([...params].length > 0) {
